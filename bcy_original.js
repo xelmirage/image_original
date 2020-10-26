@@ -31,7 +31,7 @@
 
 document.body.insertAdjacentHTML(
     'beforeend',
-    `<div id="downUrl" style="position: fixed; right: 0px; top: 300px; padding: 15px 20px; background: rgb(46, 178, 234); color: rgb(255, 255, 255); border-radius: 5px; text-align: center; line-height: 24px; font-size: 16px; cursor: pointer;">下载大图</div>`
+    `<div id="downUrl" style="position: fixed; right: 0px; top: 155px; padding: 15px 20px; background: rgb(46, 178, 234); color: rgb(255, 255, 255); border-radius: 5px; text-align: center; line-height: 24px; font-size: 16px; cursor: pointer;">下载大图</div>`
 )
 
 document.querySelector('#downUrl').addEventListener('click', () => {
