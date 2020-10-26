@@ -2,7 +2,7 @@
 // @name         半次元大图下载
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
+// @description  下载半次元无水印大图，并重命名为  bcy_帖子编号_文件名
 // @author       Xelmirage
 // @match        https://bcy.net/*/detail/*
 // @grant       unsafeWindow
