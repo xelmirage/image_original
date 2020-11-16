@@ -8,7 +8,7 @@
 // @grant       unsafeWindow
 // @run-at		  document-end
 	
-// @updateURL https://github.com/xelmirage/bcy_original/raw/main/bcy_original.js
+// @updateURL https://raw.githubusercontent.com/xelmirage/image_original/main/bcy/bcy_original.js
 // ==/UserScript==
 
 //inspired by:
