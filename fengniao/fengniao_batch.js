@@ -105,7 +105,7 @@
 
             sleep(100);
 
-            var l=imgSrc.split("/");
+            var l=eachSrc.split("/");
             var file_name="fengniao_"+$(".title.bBg").text()+"_"+l[l.length-1];
             download(eachSrc,file_name);
 			//downloadPic.downloadFile(eachSrc, i + 1, 1, bbsPicUpdateProgress, bbsPicTransferComplete, saveAs)
