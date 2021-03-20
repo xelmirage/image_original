@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       xelmirage
-// @match        http://behash.com/user
+// @match        http://*.behash.com/user
 // @grant        none
 // ==/UserScript==
 
