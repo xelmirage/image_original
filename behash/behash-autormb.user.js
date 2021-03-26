@@ -5,7 +5,9 @@
 // @description  try to take over the world!
 // @author       xelmirage
 // @match        http://*.behash.com/user
+// @match        http://*.hxbao.com/user
 // @grant        none
+// @updateURL    https://github.com/xelmirage/image_original/raw/main/behash/behash-autormb.user.js
 // ==/UserScript==
 
 (function() {
