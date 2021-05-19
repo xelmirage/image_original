@@ -28,7 +28,7 @@
                         <div class="row">\
                             <div class="col-sm-3">可提现人民币</div>\
                             <div class="col-sm-6"></div>\
-                            <div class="col-sm-3">'+hashCount*hashPrice +' <span>元人民币</span></div>\
+                            <div class="col-sm-3">'+(hashCount*hashPrice).toFixed(2) +' <span>元人民币</span></div>\
                         </div>\
                     </li>';
     let share=document.querySelector("body > div.container.mt-5 > div > div.col-sm-9 > ul:nth-child(3) > li:nth-child(4)");
