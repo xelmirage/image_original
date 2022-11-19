@@ -6,6 +6,7 @@
 // @author       xelmirage
 // @match        https://twitter.com/
 // @include      https://twitter.com/*
+// @updateURL    https://github.com/xelmirage/image_original/raw/main/Myyyyyy%20Batch%20TwitterImg%20Downloader.user.js
 // @require      http://code.jquery.com/jquery-3.3.1.min.js
 // @grant        none
 // @connect      *://*.twimg.com
