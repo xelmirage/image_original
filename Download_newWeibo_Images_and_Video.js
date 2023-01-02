@@ -6,12 +6,14 @@
 // @description  一键下载一条微博中的图片，文件名包含该微博的路径．xxx_wb_uid_wid，可恢复为 https://weibo.com/uid/wid
 // @description:en Download images from weibo with user-id and weibo-id in its filename. filname format xxx_wb_uid_wid
 // @author       xelmirage
+// @updateURL    https://raw.githubusercontent.com/xelmirage/image_original/main/Download_newWeibo_Images_and_Video.js
 // @match        https://weibo.com/*
 // @match        https://www.weibo.com/*
 // @grant        none
 // @license      MIT License
 // @run-at       document-end
 // @connect      *://*.sinaimg.cn
+
 // ==/UserScript==
 
 
