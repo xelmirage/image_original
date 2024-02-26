@@ -166,7 +166,7 @@
   var addFunction = function(){
         sleep(10);
         var lists = document.getElementsByClassName('wbpro-feed-content');
-        console.log('media_box list.length = ' + lists.length);
+        console.log('media_box wbpro-feed-content list.length = ' + lists.length);
         for( var i = 0; i < lists.length; i++) {
             var txt='';
             //txt=lists[i].children[0].children[0].children[0].children[0].children[1].children[0].children[0].children[0].children[0].text;
@@ -198,20 +198,37 @@
 
             //inputBoxDict.set(button,path);
             //var rt_list=list.parentNode.children[2];
-            //console.log(list.parentNode.children)
-            //console.log(list.parentNode.children.length);
+            console.log(list)
+            console.log(list.parentNode.children)
+            console.log("list.parentNode.children.length=",list.parentNode.children.length);
+            console.log("post_link:",list.parentNode.children[0].children[1].children[0].children[1].children[0].href)
             //console.log(rt_list.className);
             var post_link;
 
-            if (list.parentNode.children.length==3){//假如是转发
-                var retweet=list.parentNode.children[2];
-                post_link=retweet.children[2].children[0].children[0].href;
-                console.log("retweet post link",post_link);
-                path=url2UseridPostid(post_link);
-                console.log(path);
-                inputBoxDict.set(button,path);
-                retweet.appendChild(inputBox);
-                retweet.appendChild(button);
+            if (list.parentNode.children.length==3)
+            {//假如是转发
+                console.log("class name:",list.parentNode.children[2].className)
+                if (list.parentNode.children[2].className.includes("Feed_placebox"))
+                {
+                    post_link=list.parentNode.children[0].children[1].children[0].children[1].children[0].href;
+                    console.log("original post link",post_link);
+                    path=url2UseridPostid(post_link);
+                    console.log(path);
+                    console.log(list.parentNode.children[0].children[1].children[0].children[1].children[0]);
+                    inputBoxDict.set(button,path);
+                    list.appendChild(inputBox);
+                    list.appendChild(button);
+                }
+                else{
+                    var retweet=list.parentNode.children[2];
+                    post_link=retweet.children[2].children[0].children[0].href;
+                    console.log("retweet post link",post_link);
+                    path=url2UseridPostid(post_link);
+                    console.log(path);
+                    inputBoxDict.set(button,path);
+                    retweet.appendChild(inputBox);
+                    retweet.appendChild(button);
+                }
             }
             else{//原创
                 post_link=list.parentNode.children[0].children[1].children[0].children[1].children[0].href;
