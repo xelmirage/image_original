@@ -209,7 +209,7 @@
             {//假如是转发
                 console.log("class name:",list.parentNode.children[2].className)
                 if (list.parentNode.children[2].className.includes("Feed_placebox"))
-                {
+                {//list.parentNode.children.length==3也有原创的情况，list.parentNode.children的第三个元素是签到位置
                     post_link=list.parentNode.children[0].children[1].children[0].children[1].children[0].href;
                     console.log("original post link",post_link);
                     path=url2UseridPostid(post_link);
